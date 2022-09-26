@@ -85,7 +85,7 @@ a:hover
     color:white;
     border-radius: 5px;
     animation: FirstHover;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 
@@ -157,14 +157,14 @@ a:hover
     border-right: 1px solid black;
     padding-right: 1em;
     animation-name: ResSpwn;
-    animation-duration: 0.33s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards; 
 }
 
 .option:nth-child(2)
 {
     animation-name: ExpSpwn;
-    animation-duration: 0.66s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -172,7 +172,7 @@ a:hover
 {
     white-space: nowrap;
     animation: AbtSpwn;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
 }
 

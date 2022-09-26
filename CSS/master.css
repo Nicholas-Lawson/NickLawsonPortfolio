@@ -1,0 +1,236 @@
+@font-face
+{
+	font-family: Simplician;
+	src: url(../Fonts/CelinePeachSans.ttf);
+}
+
+@font-face
+{
+	font-family: Numeratus;
+	src: url(../Fonts/GeosansLight.ttf);
+	font-weight: bold;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+body
+{
+    background: linear-gradient(45deg, rgba(22,122,148,1) 0%, rgba(43,249,255,1) 50%, rgba(22,122,148,1) 100%);
+    background-size: 400% 400%;
+}
+
+body, div
+{
+    margin: 0;
+}
+
+h1, h3
+{
+	font-family: Simplician;
+	font-weight: lighter;
+}
+
+a:visited, a:link
+{
+    color: black;
+    text-decoration: none;
+}
+
+a
+{
+    font-family: Numeratus;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+a:hover
+{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    animation: FirstHover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* TITLE CSS */
+
+.title-box
+{
+    padding-left: 2.5em;
+    width: 56%;
+}
+
+.title-box h1
+{
+    font-size: 5rem;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.title-box h3
+{
+    font-size: 3.5rem;
+    margin: 0;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+/*--------------------------------------*/
+
+.container
+{
+    display: flex;
+    padding-top: 1.5em;
+}
+
+/* IMAGE CSS */
+
+.pic-box
+{
+    width: 30%;
+    margin: 0em 0em 2em 2.5em;
+}
+
+.pic-box img
+{
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 100%;
+    animation-name: PicSpwn;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+/*-------------------------------------*/
+
+/* OPTIONS CSS */
+
+.option-box
+{
+    padding-left: 2.5em;
+    width: fit-content;
+}
+
+.option
+{
+    width: 100%;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-right: 1px solid black;
+    padding-right: 1em;
+    animation-name: ResSpwn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; 
+}
+
+.option:nth-child(2)
+{
+    animation-name: ExpSpwn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.option:nth-child(3)
+{
+    white-space: nowrap;
+    animation: AbtSpwn;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+/*----------------------------------*/
+
+@media screen and (min-width: 1630px) {
+    
+    .pic-box
+    {
+        width: 33%;
+    }
+
+    .container
+    {
+        padding-top: 3.5em;
+    }
+}
+
+/*--------Animations----------*/
+
+@keyframes ResSpwn
+{
+    0%{width: 0%}
+    100%{ width: 100%}
+}
+
+@keyframes ExpSpwn
+{
+    0%{width: 0%; opacity: 0%}
+    50%{width: 0%; opacity: 0%}
+    100%{width: 100%; opacity: 100%}    
+}
+
+@keyframes AbtSpwn
+{
+    0%{width: 0%; opacity: 0%}
+    66%{width: 0%; opacity: 0%}
+    100%{width: 100%; opacity: 100%}    
+}
+
+@keyframes PicSpwn
+{
+    0%{opacity: 0; width: 0%}
+    80%{opacity: 0; width: 100%}
+    100%{opacity: 100%}
+}
+
+/*----------------------------*/
+
+.abtDesc, .exDesc
+{
+    display: none;
+    width: 90%;
+}
+
+.body-desc-toggle
+{
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}

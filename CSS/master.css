@@ -135,7 +135,7 @@ a:hover
     border-radius: 5px;
     width: 100%;
     animation-name: PicSpwn;
-    animation-duration: 6s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 

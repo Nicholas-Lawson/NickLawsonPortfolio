@@ -228,6 +228,16 @@ a:hover
     width: 90%;
 }
 
+.abtDesc h2, .exDesc h2
+{
+    font-family: Simplician;
+}
+
+.abtDesc p, .exDesc p
+{
+    font-family: Numeratus;
+}
+
 .body-desc-toggle
 {
     -webkit-animation: Gradient 15s ease infinite;

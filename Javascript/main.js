@@ -21,7 +21,6 @@ $(function()
     {
         $( "div[class='option res'], div[class='option about']" ).toggle("slow");
         $( "div[class='exDesc']").toggle("slow");
-        $( ".exDesc h2" ).css("font-family", "Simplician");
         $( "body" ).toggleClass( "body-desc-toggle" );
     });
 

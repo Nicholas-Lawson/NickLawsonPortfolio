@@ -58,7 +58,7 @@ body, div
     margin: 0;
 }
 
-h1, h3
+h1, h2, h3, p
 {
 	font-family: Simplician;
 	font-weight: lighter;
@@ -226,16 +226,6 @@ a:hover
 {
     display: none;
     width: 90%;
-}
-
-.abtDesc h2, .exDesc h2
-{
-    font-family: Simplician;
-}
-
-.abtDesc p, .exDesc p
-{
-    font-family: Numeratus;
 }
 
 .body-desc-toggle

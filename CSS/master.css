@@ -58,10 +58,15 @@ body, div
     margin: 0;
 }
 
-h1, h2, h3, p
+h1, h2, h3
 {
 	font-family: Simplician;
 	font-weight: lighter;
+}
+
+p
+{
+	font-family: Numeratus;	
 }
 
 a:visited, a:link

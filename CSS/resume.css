@@ -190,6 +190,11 @@ button:hover
     {
         width: 20%;
     }
+	
+    .interests
+    {
+        display: none;
+    }
 
     .label h3
     {

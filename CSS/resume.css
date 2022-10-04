@@ -225,4 +225,7 @@ button:hover
     {
         text-decoration: none;
     }
+	
+    @page :footer { display: none;}
+    @page :header { display: none;}
 }

@@ -17,14 +17,14 @@ function widthFlex()
 
 $(function()
 {
-    $( "a[id='Exp']" ).on("click", function()
+    $( "a[id='Exp'], #ex" ).on("click", function()
     {
         $( "div[class='option res'], div[class='option about']" ).toggle("slow");
         $( "div[class='exDesc']").toggle("slow");
         $( "body" ).toggleClass( "body-desc-toggle" );
     });
 
-    $( "a[id='Abt']" ).on("click", function()
+    $( "a[id='Abt'], #abt" ).on("click", function()
     {
         $( "div[class='option res'], div[class='option ex']" ).toggle("slow");
         $( "div[class='abtDesc']").toggle("slow");

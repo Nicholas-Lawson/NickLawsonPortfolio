@@ -49,8 +49,7 @@
 
 body
 {
-    background: linear-gradient(45deg, rgba(22,122,148,1) 0%, rgba(43,249,255,1) 50%, rgba(22,122,148,1) 100%);
-    background-size: 400% 400%;
+    background-color: #A997CC;
 }
 
 body, div
@@ -232,6 +231,20 @@ a:hover
 {
     display: none;
     width: 90%;
+}
+
+#abt, #ex
+{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.top
+{
+    width: fit-content;
+    border-top: 1px solid black;
+    margin-top: .5em;
+    padding-top: .5em;
 }
 
 .body-desc-toggle
